@@ -1,9 +1,8 @@
 /* Aula 05.A.ac Transações e Restrições de integridade
-
-
+*/
+/* 
 Questão 1.
-
-/*
+*/
 
 CREATE TABLE pessoa (
     ID INT,
@@ -17,7 +16,7 @@ CREATE TABLE pessoa (
 
 Questão 2.
 
-/*
+*/
 
 ALTER TABLE pessoa
 ADD CONSTRAINT UQ_pessoa_ID_nome_sobrenome UNIQUE (ID, nome, sobrenome);
@@ -27,7 +26,7 @@ ADD CONSTRAINT UQ_pessoa_ID_nome_sobrenome UNIQUE (ID, nome, sobrenome);
 
 Questão 3.
 
-/*
+*/
 
 ALTER TABLE pessoa
 ALTER COLUMN idade INT NOT NULL;
@@ -37,8 +36,8 @@ ALTER COLUMN idade INT NOT NULL;
 /*
 
 Questão 4.
+*/
 
-/*
 
 CREATE TABLE endereco (
     ID INT PRIMARY KEY,
